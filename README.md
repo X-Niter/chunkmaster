@@ -6,7 +6,7 @@
 
 ---
 
-![ChunkMaster Banner](https://raw.githubusercontent.com/yourusername/chunkmaster/main/assets/banner.png)
+![ChunkMaster Logo](https://github.com/user-attachments/assets/d46fd61d-350d-40bb-8c15-c774ceda08a8)
 
 ---
 
