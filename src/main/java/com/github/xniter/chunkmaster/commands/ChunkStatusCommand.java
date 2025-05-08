@@ -1,6 +1,7 @@
 package com.github.xniter.chunkmaster.commands;
 
-import com.github.xniter.chunkmaster.LODFilter;
+import com.github.xniter.chunkmaster.api.Tier;
+import com.github.xniter.chunkmaster.scheduler.LODFilter;
 import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -23,8 +24,8 @@ public class ChunkStatusCommand {
                     ChunkPos chunkPos = new ChunkPos(pos);
                     LevelChunk chunk = level.getChunk(chunkPos.x, chunkPos.z);
 
-                    var tier = LODFilter.getChunkTier(chunk, level);
-                    boolean shouldTick = LODFilter.shouldFullTick(chunk, level);
+                    Tier tier = LODFilter.classify(chunk, level);
+                    boolean shouldTick = tier instanceof Tier.Hot;
 
                     source.sendSuccess(() ->
                             net.minecraft.network.chat.Component.literal(

@@ -1,14 +1,14 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()
         maven { url = 'https://maven.neoforged.net/releases' }
         mavenCentral()
-        gradlePluginPortal()
         maven { url = 'https://repo.spongepowered.org/maven' }
     }
-}
-
-plugins {
-    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.9.0'
+    plugins {
+        id 'net.neoforged.gradle.userdev' version '7.0.173'
+        id 'org.gradle.toolchains.foojay-resolver-convention' version '0.9.0'
+    }
 }
 
 rootProject.name = 'chunkmaster'

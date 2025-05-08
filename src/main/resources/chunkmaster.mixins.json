@@ -1,11 +1,11 @@
 {
   "required": true,
-  "package": "com.github.xniter.chunkmaster.mixin",
+  "package": "com.github.xniter.chunkmaster.mixins",
   "compatibilityLevel": "JAVA_21",
   "refmap": "chunkmaster.refmap.json",
   "mixins": [
-    "ChunkMapMixin",
-    "ChunkMapAccessor"
+    "LevelTicksMixin",
+    "ServerLevelCtorMixin"
   ],
   "client": [],
   "server": [],

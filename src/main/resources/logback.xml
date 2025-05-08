@@ -5,7 +5,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.github.xniter.chunkmaster" level="INFO"/>
+    <logger name="com.github.xniter.chunkmaster" level="DEBUG"/>
 
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
